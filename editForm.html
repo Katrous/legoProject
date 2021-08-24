@@ -1,0 +1,102 @@
+<html class="" lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lego</title>
+    <link rel="stylesheet" href="css/foundation-prototype.css">
+    <link rel="stylesheet" href="css/laura-style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/editPostStyles.css">
+    
+  <meta class="foundation-mq"></head>
+  <body>
+     <a id="home"></a>
+    <div class="top-bar" id="mainNavigation" style="display: flex;">
+      <div class="top-bar-left">
+        <ul class="menu vertical medium-horizontal">
+          <!--<li class="menu-text hide-for-small-only"><a>Logo</a></li>-->
+          <img src="img/brickin-it2_1.webp" alt="brickin-it" width="75" height="75"> 
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu vertical medium-horizontal">
+          <li class="menu-text hide-for-small-only"><a href="form-for-new-blog-post.html">Blog</a></li>
+          <li class="menu-text hide-for-small-only"><a href="editForm.html">Edit</a></li>
+          <li class="menu-text hide-for-small-only"><a href="blogList.html">View Post</a></li>
+          <li class="menu-text hide-for-small-only"><a href="login.html">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <main class="main grid-x">
+
+        <div class="formContainer cell">
+            <form action="" class="editForm ">
+            <h2>Edit Post</h2>
+            <label for="postTitle">Post Title</label>
+            <input type="text">
+
+            <label for="Post Category">Post Category</label>
+            <select name="category" id="">
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+              <option value="option4">Option 4</option>
+              <option value="option5">Option 5</option>
+              <option value="option6">Option 6</option>
+          </select>
+            <label for="postImage">Upload An Image</label>
+            <button class="button" id="attachBtn">Attach</button>
+            <label for="Post Description"></label>
+            <textarea name="" id="" cols="30" rows="8"></textarea>
+
+            <label for="Post Content"></label>
+            <textarea name="" id="" cols="30" rows="8"></textarea>
+
+       
+
+            <input class="button" type="submit">
+        </form>
+    </div>
+        <div id="editFormPost" class="singlePostExample cell">
+            <div>
+                <div class="row column text-center">
+                  <h2 class="subheader">Blog Title</h2>
+                </div>
+              </div>
+        
+            <div class="blog-post">
+                <div>
+                <img class="blog-image" src="img/replace.png">
+                </div>
+                <div class="blog-text">
+                <div class="text-center">
+                <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.
+                    Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.
+                </p>
+                    
+                <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.
+                    Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.
+                    Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.
+                    Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.
+                </p>
+                </div>
+                </div>
+                
+      
+        
+        </div>
+    </main>
+
+   
+    
+   
+  
+      <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
+      <script>
+        $(document).foundation();
+      </script>
+    
+  
+  </body></html>
