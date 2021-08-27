@@ -1,0 +1,14 @@
+.menu img {
+  width: 40px;
+}
+
+.top-bar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+nav {
+  max-width: 100%;
+  background: #e6e6e6;
+}
+/*# sourceMappingURL=header.css.map */
