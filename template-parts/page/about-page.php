@@ -85,7 +85,7 @@
                 <div class="media-object-section">
                   <h3>Post Title</h3>
             <p>Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit.<a href="home-2/single/">Read More</a></p>
+              adipiscing elit.<a href="#">Read More</a></p>
                 </div>
               </div>
   
@@ -99,7 +99,7 @@
                 <div class="media-object-section">
                   <h3>Post Title</h3>
             <p>Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit.<a href="home-2/single/">Read More</a></p>
+              adipiscing elit.<a href="#">Read More</a></p>
                 </div>
               </div>
   
@@ -114,7 +114,7 @@
                 <div class="media-object-section">
                   <h3>Post Title</h3>
             <p>Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit.<a href="home-2/single/">Read More</a></p>
+              adipiscing elit.<a href="#">Read More</a></p>
                 </div>
               </div>
   
