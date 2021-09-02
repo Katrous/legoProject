@@ -61,6 +61,33 @@
         </div>
       </div>
       <br>
+
+<p> Test</p>
+
+<?php 
+
+
+// LOAD POSTS DYNAMICALLY
+while(have_posts()) {
+  the_post(); ?>
+
+  <div class="post-item">
+    <h2><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h2>
+    <div>
+      <p>Posted By <?php the_author_posts_link(); ?> on <?php the_time('n/j/y'); ?> in <?php echo get_the_category_list(', ') ?> </p>
+    </div>
+
+    <div>
+      <?php the_excerpt(); ?>
+      <p><a href="<?php the_permalink();?>">Continue Reading &raquo;</a></p>
+    </div>
+  </div>
+  <?php
+}
+
+echo paginate_links();
+?>
+
       <div class="main-bottom">
       <div class="grid-x align-bottom">
           <div class="medium-4 cell">
