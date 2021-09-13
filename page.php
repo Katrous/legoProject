@@ -1,29 +1,23 @@
-<?php
-/**
- * @package WordPress
- * @subpackage
- * @since
- * @version 1.0
- */
+<?php 
+//ABOUT PAGE
+get_header();
 
-?>
-	
-
-<?php get_header(); ?>
-
-<main>
-  <br>
-      <div class="row title">
+while(have_posts()){
+  the_post(); ?>
+    <!-- title -->
+ <div class="row title">
     <div class="columns">
-      <h2>About us</h2>
+    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
     </div>
   </div>
+
+  <hr>
+
   <!-- content -->
- 
   <div class="main-middle">
     <div class="grid-x grid-margin-x">
           <div class="medium-6 cell small-order-2 medium-order-1">
-            <img class="thumbnail" src="/wordpress/wp-content/themes/lego/assets/img/placeholder.png">
+            <img class="thumbnail" src="<?php echo get_theme_file_uri("/img/placeholder.png")?>">
           </div>
           <div class="medium-6 cell small-order-1 medium-order-2">
           <p>Lorem ipsum dolor sit amet, consectetur
@@ -67,58 +61,16 @@
                 </p>
               </div>
               <div class="medium-6 cell small-order-1 medium-order-2">
-                <img class="thumbnail" src="/wordpress/wp-content/themes/lego/assets/img/placeholder.png">
+                <img class="thumbnail" src="<?php echo get_theme_file_uri("/img/placeholder.png")?>">
               </div>
             </div>
           </div>
           <br>
+  <?php }
+?>
 
-          <h5 class="excerpt-post-title">Make Sure To Check Out the Latest Post!</h5>
-<!--posts three-->
-<div class="bottom-container">
-          <div class="grid-x align-bottom">
-            <div class="medium-4 cell">
-              <div class="media-object">
-                <div class="media-object-section">
-                  <img class="thumbnail" src="/wordpress/wp-content/themes/lego/assets/img/placeholder.png">
-                </div>
-                <div class="media-object-section">
-                  <h3>Post Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit.<a href="#">Read More</a></p>
-                </div>
-              </div>
-  
-  
-            </div>
-            <div class="medium-4 cell">
-              <div class="media-object">
-                <div class="media-object-section">
-                  <img class="thumbnail" src="/wordpress/wp-content/themes/lego/assets/img/placeholder.png">
-                </div>
-                <div class="media-object-section">
-                  <h3>Post Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit.<a href="#">Read More</a></p>
-                </div>
-              </div>
-  
-  
-            </div>
-            <div class="medium-4 cell">
-  
-              <div class="media-object">
-                <div class="media-object-section">
-                  <img class="thumbnail" src="/wordpress/wp-content/themes/lego/assets/img/placeholder.png">
-                </div>
-                <div class="media-object-section">
-                  <h3>Post Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit.<a href="#">Read More</a></p>
-                </div>
-              </div>
-  
-            </div>
-          </div>
-        </div>
-    </main>
+
+    <h5 class="excerpt-post-title">Make Sure To Check Out the Latest Post!</h5>
+
+<!-- INLUDE CONTACT PAGE HERE -->
+<?php get_footer(); ?>

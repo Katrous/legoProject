@@ -1,19 +1,6 @@
-<?php
-/**
- * @package WordPress
- * @subpackage
- * @since
- * @version 1.0
- */
-
-?>
-	
-
 <?php get_header(); ?>
 
-<main>
-  
-  <br>
+    <main>
       <div class="main-top">
         <div class="grid-x grid-margin-x">
         <div class="medium-5 large-4 cell">
@@ -26,7 +13,7 @@
             tempor nunc, sit amet rhoncus risus. </p>
         </div>
         <div class="show-for-large large-4 cell">
-          <img src="<?php echo get_theme_file_uri("/assets/img/placeholder.png")?>" alt="">
+          <img src="<?php echo get_theme_file_uri("/img/placeholder.png")?>" alt="">
         </div>
         <div class="medium-5 large-4 cell">
             <h1>Post Title</h1>
@@ -47,40 +34,17 @@
       </div>
     <br>
     <div class="main-middle">
-
-    <?php 
-
-
-// LOAD POSTS DYNAMICALLY
-while(have_posts()) {
-  the_post(); ?>
-
-  <div class="post-item">
-    <h2><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h2>
-    <div>
-      <p>Posted By <?php the_author_posts_link(); ?> on <?php the_time('n/j/y'); ?> in <?php echo get_the_category_list(', ') ?> </p>
-    </div>
-
-    <div>
-      <?php the_excerpt(); ?>
-      <p><a href="<?php the_permalink();?>">Continue Reading &raquo;</a></p>
-    </div>
-  </div>
-  <?php
-}
-
-echo paginate_links();
-?>
     <div class="grid-x grid-margin-x">
           <div class="medium-6 cell small-order-2 medium-order-1">
-            <img class="thumbnail" src="<?php echo get_theme_file_uri("/assets/img/placeholder.png")?>">
+            <img class="thumbnail" src="<?php echo get_theme_file_uri("/img/placeholder.png")?>">
           </div>
           <div class="medium-6 cell small-order-1 medium-order-2">
             <h1>Post Title</h1>
           <p>Lorem ipsum dolor sit amet, consectetur
             adipiscing elit. Donec molestie, ante et
             luctus vehicula, nisl leo porta lacus, nec
-            laoreet nisi quam a dui. <a href="#">Read More</a>
+            laoreet nisi quam a dui. </p>
+            <a href="#">Read More</a>
             </p>
           </div>
         </div>
@@ -91,96 +55,105 @@ echo paginate_links();
           <div class="medium-4 cell">
             <div class="media-object">
               <div class="media-object-section">
-                <img class="thumbnail" src="<?php echo get_theme_file_uri("/assets/img/placeholder.png")?>">
+                <img class="thumbnail" src="<?php echo get_theme_file_uri("/img/placeholder.png")?>">
               </div>
               <div class="media-object-section">
-                <h3>Post Title</h3>
+                <h5>Post Title</h5>
           <p>Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.<a href="#">Read More</a>
+            adipiscing elit.</p>
+            <a href="#">Read More</a>
               </div>
             </div>
             <div class="media-object">
               <div class="media-object-section">
-                <img class="thumbnail" src="<?php echo get_theme_file_uri("/assets/img/placeholder.png")?>">
+                <img class="thumbnail" src="<?php echo get_theme_file_uri("/img/placeholder.png")?>">
               </div>
               <div class="media-object-section">
-                <h3>Post Title</h3>
+                <h5>Post Title</h5>
           <p>Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.<a href="#">Read More</a>
+            adipiscing elit.</p>
+            <a href="#">Read More</a>
               </div>
             </div>
             <div class="media-object">
               <div class="media-object-section">
-                <img class="thumbnail" src="<?php echo get_theme_file_uri("/assets/img/placeholder.png")?>">
+                <img class="thumbnail" src="<?php echo get_theme_file_uri("/img/placeholder.png")?>">
               </div>
               <div class="media-object-section">
-                <h3>Post Title</h3>
+                <h5>Post Title</h5>
           <p>Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.<a href="#">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="medium-4 cell">
-            <div class="media-object">
-              <div class="media-object-section">
-                <img class="thumbnail" src="<?php echo get_theme_file_uri("/assets/img/placeholder.png")?>">
-              </div>
-              <div class="media-object-section">
-                <h3>Post Title</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.<a href="#">Read More</a>
-              </div>
-            </div>
-            <div class="media-object">
-              <div class="media-object-section">
-                <img class="thumbnail" src="<?php echo get_theme_file_uri("/assets/img/placeholder.png")?>">
-              </div>
-              <div class="media-object-section">
-                <h3>Post Title</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.<a href="#">Read More</a>
-              </div>
-            </div>
-            <div class="media-object">
-              <div class="media-object-section">
-                <img class="thumbnail" src="<?php echo get_theme_file_uri("/assets/img/placeholder.png")?>">
-              </div>
-              <div class="media-object-section">
-                <h3>Post Title</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.<a href="#">Read More</a>
+            adipiscing elit.</p>
+            <a href="#">Read More</a>
               </div>
             </div>
           </div>
           <div class="medium-4 cell">
             <div class="media-object">
               <div class="media-object-section">
-                <img class="thumbnail" src="<?php echo get_theme_file_uri("/assets/img/placeholder.png")?>">
+                <img class="thumbnail" src="<?php echo get_theme_file_uri("/img/placeholder.png")?>">
               </div>
               <div class="media-object-section">
-                <h3>Post Title</h3>
+                <h5>Post Title</h5>
           <p>Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.<a href="#">Read More</a>
+            adipiscing elit.</p>
+            <a href="#">Read More</a>
               </div>
             </div>
             <div class="media-object">
               <div class="media-object-section">
-                <img class="thumbnail" src="<?php echo get_theme_file_uri("/assets/img/placeholder.png")?>">
+                <img class="thumbnail" src="<?php echo get_theme_file_uri("/img/placeholder.png")?>">
               </div>
               <div class="media-object-section">
-                <h3>Post Title</h3>
+                <h5>Post Title</h5>
           <p>Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.<a href="#">Read More</a>
+            adipiscing elit.</p>
+            <a href="#">Read More</a>
               </div>
             </div>
             <div class="media-object">
               <div class="media-object-section">
-                <img class="thumbnail" src="<?php echo get_theme_file_uri("/assets/img/placeholder.png")?>">
+                <img class="thumbnail" src="<?php echo get_theme_file_uri("/img/placeholder.png")?>">
               </div>
               <div class="media-object-section">
-                <h3>Post Title</h3>
+                <h5>Post Title</h5>
           <p>Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.<a href="#">Read More</a>
+            adipiscing elit.</p>
+            <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="medium-4 cell">
+            <div class="media-object">
+              <div class="media-object-section">
+                <img class="thumbnail" src="<?php echo get_theme_file_uri("/img/placeholder.png")?>">
+              </div>
+              <div class="media-object-section">
+                <h5>Post Title</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit.</p>
+            <a href="#">Read More</a>
+              </div>
+            </div>
+            <div class="media-object">
+              <div class="media-object-section">
+                <img class="thumbnail" src="<?php echo get_theme_file_uri("/img/placeholder.png")?>">
+              </div>
+              <div class="media-object-section">
+                <h5>Post Title</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit.</p>
+            <a href="#">Read More</a>
+              </div>
+            </div>
+            <div class="media-object">
+              <div class="media-object-section">
+                <img class="thumbnail" src="<?php echo get_theme_file_uri("/img/placeholder.png")?>">
+              </div>
+              <div class="media-object-section">
+                <h5>Post Title</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit.</p>
+            <a href="#">Read More</a>
               </div>
             </div>
           </div>
@@ -188,3 +161,11 @@ echo paginate_links();
       </div>
       <br>
     </main>
+
+  <?php 
+
+
+
+?>
+
+<?php get_footer(); ?>

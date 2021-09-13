@@ -1,3 +1,8 @@
+/*
+	Theme Name: Client Project
+	Author: Laura, Niki, Saish And Dylan
+*/
+
 html {
 	scroll-behavior: smooth;
 }
@@ -6,7 +11,7 @@ html {
 	background: #e6e6e6;
 	padding-top: 2%;
 	padding-bottom: 2%; 
-
+	
 }
 
 .test {

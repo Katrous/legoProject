@@ -1,20 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lego</title>
-</head>
+<?php get_header();?>
+<!--Title-->
+<div>
+      <div class="row column text-center">
+        <h2 class="subheader">Blog Title</h2>
+      </div>
+    </div>
 
-<body>
-<?php get_header(); ?>
+<!--Category Boxes-->
+    <div class="bottom-container">
+    <div class="grid-x align-bottom">
 
+    <div class="small-4 medium-4 cell">
+        <div class="cat-box">
+        <div class="callout">
+            <img src="<?php echo get_theme_file_uri("/img/placeholder.png")?>">
+          </div>
+    </div>
+    </div>
+
+<div class="small-4 medium-4 cell">
+    <div class="cat-box">
+    <div class="callout">
+        <img src="<?php echo get_theme_file_uri("/img/placeholder.png")?>">
+      </div>
+</div>
+</div>
+
+
+<div class="small-4 medium-4 cell">
+    <div class="cat-box">
+    <div class="callout">
+        <img src="<?php echo get_theme_file_uri("/img/placeholder.png")?>">
+      </div>
+</div>
+</div>
+
+
+<div class="small-4 medium-4 cell">
+    <div class="cat-box">
+    <div class="callout">
+        <img src="<?php echo get_theme_file_uri("/img/placeholder.png")?>">
+      </div>
+</div>
+</div>
+
+<div class="small-4 medium-4 cell">
+<div class="cat-box">
+<div class="callout">
+    <img src="<?php echo get_theme_file_uri("/img/placeholder.png")?>">
+  </div>
+</div>
+</div>
+
+
+<div class="small-4 medium-4 cell">
+<div class="cat-box">
+<div class="callout">
+    <img src="<?php echo get_theme_file_uri("/img/placeholder.png")?>">
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<!--posts 6?-->
+
+<div class="bottom-container">
 <?php
-
-get_template_part( 'template-parts/page/content-front-page', 'none' );
+// LOAD POSTS DYNAMICALLY
+while(have_posts()){
+    the_post(); ?>
+    <div class="medium-2 cell">
+    <div class="media-object">
+        <div class="media-object-section">
+            <img class="thumbnail" src="<?php echo get_theme_file_uri("/img/placeholder.png")?>">
+        </div>
+        <div class="media-object-section">
+            <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+            <p>Posted on <?php the_time('d/m/Y'); ?> in <?php echo get_the_category_list(', '); ?></p>
+            <p><?php the_excerpt(); ?></p>
+            <a href="<?php the_permalink(); ?>">Read More &raquo;</a>
+        </div>
+    </div>
+</div>
+<?php 
+}
 
 ?>
 
-<?php get_footer(); ?>
+</div>
+<!--pagination-->
 
-</body>
+<nav aria-label="Pagination">
+  <ul class="pagination text-center">
+    <li class="pagination-previous disabled">Previous</li>
+    <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+    <li><a href="#" aria-label="Page 2">2</a></li>
+    <li><a href="#" aria-label="Page 3">3</a></li>
+    <li><a href="#" aria-label="Page 4">4</a></li>
+    <li class="ellipsis"></li>
+    <li><a href="#" aria-label="Page 12">12</a></li>
+    <li><a href="#" aria-label="Page 13">13</a></li>
+    <li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
+  </ul>
+</nav>
+
+<?php get_footer(); ?>
