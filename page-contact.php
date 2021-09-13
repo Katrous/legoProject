@@ -11,7 +11,7 @@
 
 <?php
 
-get_template_part( 'template-parts/page/contact-page', 'none' );
+// get_template_part( 'template-parts/page/contact-page', 'none' );
 
 ?>
 

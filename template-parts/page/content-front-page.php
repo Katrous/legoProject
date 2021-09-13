@@ -12,6 +12,7 @@
 <?php get_header(); ?>
 
 <main>
+  
   <br>
       <div class="main-top">
         <div class="grid-x grid-margin-x">
@@ -46,25 +47,8 @@
       </div>
     <br>
     <div class="main-middle">
-    <div class="grid-x grid-margin-x">
-          <div class="medium-6 cell small-order-2 medium-order-1">
-            <img class="thumbnail" src="<?php echo get_theme_file_uri("/assets/img/placeholder.png")?>">
-          </div>
-          <div class="medium-6 cell small-order-1 medium-order-2">
-            <h1>Post Title</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Donec molestie, ante et
-            luctus vehicula, nisl leo porta lacus, nec
-            laoreet nisi quam a dui. <a href="#">Read More</a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <br>
 
-<p> Test</p>
-
-<?php 
+    <?php 
 
 
 // LOAD POSTS DYNAMICALLY
@@ -87,7 +71,21 @@ while(have_posts()) {
 
 echo paginate_links();
 ?>
-
+    <div class="grid-x grid-margin-x">
+          <div class="medium-6 cell small-order-2 medium-order-1">
+            <img class="thumbnail" src="<?php echo get_theme_file_uri("/assets/img/placeholder.png")?>">
+          </div>
+          <div class="medium-6 cell small-order-1 medium-order-2">
+            <h1>Post Title</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Donec molestie, ante et
+            luctus vehicula, nisl leo porta lacus, nec
+            laoreet nisi quam a dui. <a href="#">Read More</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <br>
       <div class="main-bottom">
       <div class="grid-x align-bottom">
           <div class="medium-4 cell">

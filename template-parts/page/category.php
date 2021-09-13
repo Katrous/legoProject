@@ -48,17 +48,42 @@
 
     </div>
     <div class="medium-2 cell">
+
+    <?php 
+
+
+// LOAD POSTS DYNAMICALLY
+while(have_posts()) {
+  the_post(); ?>
+
+  <div class="post-item">
+    
+    <h2><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h2>
+    <div>
+      <p>Posted By <?php the_author_posts_link(); ?> on <?php the_time('n/j/y'); ?> in <?php echo get_the_category_list(', ') ?> </p>
+    </div>
+
+    <div>
+      <?php the_excerpt(); ?>
+      <p><a href="<?php the_permalink();?>">Continue Reading &raquo;</a></p>
+    </div>
+  </div>
+  <?php
+}
+
+echo paginate_links();
+?>
       <div class="media-object">
         <div class="media-object-section">
-          <img class="thumbnail" src="img/placeholder.png">
+          <img class="thumbnail" src="<?php echo get_theme_file_uri("/assets/img/placeholder.png")?>">
         </div>
         <div class="media-object-section">
           <h5>Post Title</h5>
-    <p>Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit.</p>
-      <a href="single-blog-page.html">Read More</a>
+          <p>Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit.</p>
+          <a href="single-blog-page.html">Read More</a>
         </div>
       </div>
 
@@ -66,15 +91,15 @@
     <div class="medium-2 cell">
       <div class="media-object">
         <div class="media-object-section">
-          <img class="thumbnail" src="img/placeholder.png">
+          <img class="thumbnail" src="<?php echo get_theme_file_uri("/assets/img/placeholder.png")?>">
         </div>
         <div class="media-object-section">
           <h5>Post Title</h5>
-    <p>Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit.</p>
-      <a href="single-blog-page.html">Read More</a>
+          <p>Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit.</p>
+          <a href="single-blog-page.html">Read More</a>
         </div>
       </div>
 
@@ -82,15 +107,15 @@
     <div class="medium-2 cell">
       <div class="media-object">
         <div class="media-object-section">
-          <img class="thumbnail" src="img/placeholder.png">
+          <img class="thumbnail" src="<?php echo get_theme_file_uri("/assets/img/placeholder.png")?>">
         </div>
         <div class="media-object-section">
           <h5>Post Title</h5>
-    <p>Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit.</p>
-      <a href="single-blog-page.html">Read More</a>
+          <p>Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit.</p>
+          <a href="single-blog-page.html">Read More</a>
         </div>
       </div>
       
@@ -98,15 +123,15 @@
     <div class="medium-2 cell">
       <div class="media-object">
         <div class="media-object-section">
-          <img class="thumbnail" src="img/placeholder.png">
+          <img class="thumbnail" src="<?php echo get_theme_file_uri("/assets/img/placeholder.png")?>">
         </div>
         <div class="media-object-section">
           <h5>Post Title</h5>
-    <p>Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit.</p>
-      <a href="single-blog-page.html">Read More</a>
+          <p>Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit.</p>
+          <a href="single-blog-page.html">Read More</a>
         </div>
       </div>
 
@@ -115,15 +140,15 @@
 
       <div class="media-object">
         <div class="media-object-section">
-          <img class="thumbnail" src="img/placeholder.png">
+          <img class="thumbnail" src="<?php echo get_theme_file_uri("/assets/img/placeholder.png")?>">
         </div>
         <div class="media-object-section">
           <h5>Post Title</h5>
-    <p>Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit.</p>
-      <a href="single-blog-page.html">Read More</a>
+          <p>Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit.</p>
+          <a href="single-blog-page.html">Read More</a>
         </div>
       </div>
 
