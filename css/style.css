@@ -133,15 +133,18 @@ h3 {
 	width: 99%;
 }
 
+.bottom-posts {
+	text-align: center;
+    margin: 0 auto;
+    padding: 0 5%;
+}
 
 /*Single Blog Post*/
 
 .blog-image {
-	height:60%;
+	width: 80%;
 	position: center;
 	text-align: center;
-	padding-left: 23%;
-	padding-right: 20%;
 
 }
 
