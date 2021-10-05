@@ -24,7 +24,7 @@
             ultrices condimentum hendrerit. Phasellus a
             tempor nunc, sit amet rhoncus risus. </p>
         </div>
-        <div class="show-for-large large-4 cell">
+        <div class="show-for-small large-4 cell">
           <img src="/wordpress/wp-content/themes/lego/assets/img/placeholder.png" alt="">
         </div>
         <div class="medium-5 large-4 cell">
@@ -55,7 +55,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur
             adipiscing elit. Donec molestie, ante et
             luctus vehicula, nisl leo porta lacus, nec
-            laoreet nisi quam a dui. <a href="#">Read More</a>
+            laoreet nisi quam a dui. <a href="single.php">Read More</a>
             </p>
           </div>
         </div>
@@ -71,7 +71,7 @@
               <div class="media-object-section">
                 <h3>Post Title</h3>
           <p>Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.<a href="#">Read More</a>
+            adipiscing elit.<a href="single.php">Read More</a>
               </div>
             </div>
             <div class="media-object">
@@ -81,7 +81,7 @@
               <div class="media-object-section">
                 <h3>Post Title</h3>
           <p>Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.<a href="#">Read More</a>
+            adipiscing elit.<a href="single.php">Read More</a>
               </div>
             </div>
             <div class="media-object">
@@ -91,39 +91,7 @@
               <div class="media-object-section">
                 <h3>Post Title</h3>
           <p>Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.<a href="#">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="medium-4 cell">
-            <div class="media-object">
-              <div class="media-object-section">
-                <img class="thumbnail" src="/wordpress/wp-content/themes/lego/assets/img/placeholder.png">
-              </div>
-              <div class="media-object-section">
-                <h3>Post Title</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.<a href="#">Read More</a>
-              </div>
-            </div>
-            <div class="media-object">
-              <div class="media-object-section">
-                <img class="thumbnail" src="/wordpress/wp-content/themes/lego/assets/img/placeholder.png">
-              </div>
-              <div class="media-object-section">
-                <h3>Post Title</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.<a href="#">Read More</a>
-              </div>
-            </div>
-            <div class="media-object">
-              <div class="media-object-section">
-                <img class="thumbnail" src="/wordpress/wp-content/themes/lego/assets/img/placeholder.png">
-              </div>
-              <div class="media-object-section">
-                <h3>Post Title</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.<a href="#">Read More</a>
+            adipiscing elit.<a href="single.php">Read More</a>
               </div>
             </div>
           </div>
@@ -135,7 +103,7 @@
               <div class="media-object-section">
                 <h3>Post Title</h3>
           <p>Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.<a href="#">Read More</a>
+            adipiscing elit.<a href="single.php">Read More</a>
               </div>
             </div>
             <div class="media-object">
@@ -145,7 +113,7 @@
               <div class="media-object-section">
                 <h3>Post Title</h3>
           <p>Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.<a href="#">Read More</a>
+            adipiscing elit.<a href="single.php">Read More</a>
               </div>
             </div>
             <div class="media-object">
@@ -155,7 +123,39 @@
               <div class="media-object-section">
                 <h3>Post Title</h3>
           <p>Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.<a href="#">Read More</a>
+            adipiscing elit.<a href="single.php">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="medium-4 cell">
+            <div class="media-object">
+              <div class="media-object-section">
+                <img class="thumbnail" src="/wordpress/wp-content/themes/lego/assets/img/placeholder.png">
+              </div>
+              <div class="media-object-section">
+                <h3>Post Title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit.<a href="single.php">Read More</a>
+              </div>
+            </div>
+            <div class="media-object">
+              <div class="media-object-section">
+                <img class="thumbnail" src="/wordpress/wp-content/themes/lego/assets/img/placeholder.png">
+              </div>
+              <div class="media-object-section">
+                <h3>Post Title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit.<a href="single.php">Read More</a>
+              </div>
+            </div>
+            <div class="media-object">
+              <div class="media-object-section">
+                <img class="thumbnail" src="/wordpress/wp-content/themes/lego/assets/img/placeholder.png">
+              </div>
+              <div class="media-object-section">
+                <h3>Post Title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit.<a href="single.php">Read More</a>
               </div>
             </div>
           </div>

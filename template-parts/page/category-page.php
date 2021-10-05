@@ -12,33 +12,38 @@
 <?php get_header(); ?>
 
 <main>
-  <br>
-         <div>
+<br>
+    <div class="grid-x grid-margin-x">
+      <div class="medium-5 large-8 cell">
       <div class="row column text-center">
-        <h2 class="subheader">Blog Title - Am I in the right one?</h2>
+        <h2 class="subheader">Title</h2>
       </div>
     </div>
+    <div class="large-4 cell">
+      <div class="filter">
+    <div class="cell">
+      <label>Category
+          <select>
+            <option value="husker">Husker</option>
+            <option value="starbuck">Starbuck</option>
+            <option value="hotdog">Hot Dog</option>
+            <option value="apollo">Apollo</option>
+          </select>
+        </label>
+  </div>
+</div>
+</div>
+    </div>
 
-
-
-<!-- Category Boxes
-    <div class="bottom-container">
-    <div class="grid-x align-bottom">
-
-    <div class="category-container"> -->
-
-<?php
-// LOAD Category DYNAMICALLY //
-
-$categories = get_categories();
-foreach($categories as $category) 
-echo '<a href="' . get_category_link($category->term_id) . '" class="hollow button secondary medium-expanded">' . $category->name . '</a>';
-  
-?>
-
-<!--posts 6?-->
-
-
+<div class="bottom-container">
+  <div class="grid-x align-bottom">
+    <div class="medium-2 cell">
+      <div class="media-object">
+        <div class="media-object-section">
+        </div>
+         
+        </div>
+      </div>
 
 <div class="bottom-container">
 <?php
@@ -68,6 +73,4 @@ while(have_posts()){
     </div>
   </div>
 </div>
-
-      <br>
-    </main>
+</main>

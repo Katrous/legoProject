@@ -15,7 +15,7 @@
   <br>
       <div class="row title">
     <div class="columns">
-      <h2>About us</h2>
+      <h2>About Us</h2>
     </div>
   </div>
   <!-- content -->

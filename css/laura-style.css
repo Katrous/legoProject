@@ -128,4 +128,26 @@ h3 {
 }
 
 
+/* 
+niks
+*/
 
+.button {
+  background-color: #adadad;
+  border: none;
+  color: rgb(44, 44, 44);
+  padding: 40px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+.hollow .button 
+.secondary .expanded {
+
+	height:100px;
+}
