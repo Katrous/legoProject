@@ -6,6 +6,7 @@
       </div>
     </div>
 
+    
 <!--Category Boxes-->
     <div class="bottom-container">
     <div class="grid-x align-bottom">
@@ -64,7 +65,22 @@
 
 </div>
 
-<!--posts 6?-->
+ <!-- Category Boxes -->
+    <div class="bottom-container">
+    <div class="grid-x align-bottom">
+    <div class="category-container"> 
+
+<?php
+// LOAD Category DYNAMICALLY //
+
+$categories = get_categories();
+foreach($categories as $category) 
+echo '<a href="' . get_category_link($category->term_id) . '" class="hollow button secondary medium-expanded">' . $category->name . '</a>';
+  
+?>
+
+
+<!--posts 6-->
 
 <div class="bottom-container">
 <?php
@@ -106,4 +122,7 @@ while(have_posts()){
   </ul>
 </nav>
 
+</div>
+</div>
+</div>
 <?php get_footer(); ?>
