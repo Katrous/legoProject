@@ -69,6 +69,7 @@ while(have_posts()){
   <?php }
 ?>
 
+<<<<<<< HEAD:page.php
 <<<<<<< HEAD:template-parts/page/about-page.php
           <h5 class="excerpt-post-title">Make Sure To Check Out the Latest Post!</h5>
 <!--posts three-->
@@ -115,11 +116,16 @@ while(have_posts()){
                 </div>
               </div>
 =======
+=======
+>>>>>>> Laura:template-parts/page/about-page.php
 
     <h5 class="excerpt-post-title">Make Sure To Check Out the Latest Post!</h5>
 
     <?php
+<<<<<<< HEAD:page.php
 >>>>>>> Laura:page.php
+=======
+>>>>>>> Laura:template-parts/page/about-page.php
   
    // Define our WP Query Parameters
    $the_query = new WP_Query( 'posts_per_page=3' ); ?>
