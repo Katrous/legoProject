@@ -200,6 +200,21 @@ h2 {
     background-color: black;
 }
 
-.category_top {
+.subheader {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.container_category {
 	max-width: 100%;
+}
+
+.category-container {
+margin: 0 auto;
+}
+
+
+#category_link_box {
+	margin: 0 .5rem;
+	border-radius: 0.5rem;
 }

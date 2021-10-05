@@ -96,7 +96,7 @@ while(have_posts()){
             <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
             <p>Posted on <?php the_time('d/m/Y'); ?> in <?php echo get_the_category_list(', '); ?></p>
             <p><?php the_excerpt(); ?></p>
-            <a href="<?php the_permalink(); ?>">Read More &raquo;</a>
+            
         </div>
     </div>
 </div>
