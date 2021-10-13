@@ -69,63 +69,10 @@ while(have_posts()){
   <?php }
 ?>
 
-<<<<<<< HEAD:page.php
-<<<<<<< HEAD:template-parts/page/about-page.php
-          <h5 class="excerpt-post-title">Make Sure To Check Out the Latest Post!</h5>
-<!--posts three-->
-<div class="bottom-container">
-          <div class="grid-x align-bottom">
-            <div class="medium-4 cell">
-              <div class="media-object">
-                <div class="media-object-section">
-                  <img class="thumbnail" src="/wordpress/wp-content/themes/lego/assets/img/placeholder.png">
-                </div>
-                <div class="media-object-section">
-                  <h3>Post Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit.<a href="home-2/single/">Read More</a></p>
-                </div>
-              </div>
-  
-  
-            </div>
-            <div class="medium-4 cell">
-              <div class="media-object">
-                <div class="media-object-section">
-                  <img class="thumbnail" src="/wordpress/wp-content/themes/lego/assets/img/placeholder.png">
-                </div>
-                <div class="media-object-section">
-                  <h3>Post Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit.<a href="home-2/single/">Read More</a></p>
-                </div>
-              </div>
-  
-  
-            </div>
-            <div class="medium-4 cell">
-  
-              <div class="media-object">
-                <div class="media-object-section">
-                  <img class="thumbnail" src="/wordpress/wp-content/themes/lego/assets/img/placeholder.png">
-                </div>
-                <div class="media-object-section">
-                  <h3>Post Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit.<a href="home-2/single/">Read More</a></p>
-                </div>
-              </div>
-=======
-=======
->>>>>>> Laura:template-parts/page/about-page.php
 
     <h5 class="excerpt-post-title">Make Sure To Check Out the Latest Post!</h5>
 
     <?php
-<<<<<<< HEAD:page.php
->>>>>>> Laura:page.php
-=======
->>>>>>> Laura:template-parts/page/about-page.php
   
    // Define our WP Query Parameters
    $the_query = new WP_Query( 'posts_per_page=3' ); ?>
