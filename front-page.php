@@ -3,29 +3,16 @@
     <main>
       <div class="main-top">
         <div class="grid-x grid-margin-x">
-        <div class="medium-5 large-4 cell">
-          <h1>Title</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Donec molestie, ante et luctus
-            vehicula, nisl leo porta lacus, nec laoreet nisi
-            quam a dui. Praesent eu dolor mi. Mauris
-            ultrices condimentum hendrerit. Phasellus a
-            tempor nunc, sit amet rhoncus risus. </p>
-        </div>
-        <div class="show-for-large large-4 cell">
-          <img src="<?php echo get_theme_file_uri("/img/placeholder.png")?>" alt="">
-        </div>
-        <div class="medium-5 large-4 cell">
-            <h1>Post Title</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Donec molestie, ante et
-            luctus vehicula, nisl leo porta lacus, nec
-            laoreet nisi quam a dui. Praesent eu dolor
-            mi. Mauris ultrices condimentum
-            hendrerit.</p>
+          <div class="small-6 cell">
+              <h1>Brickin' It</h1>
+              <p>Hello, Im Adrian, I am a LEGO lover. I love collecting Lego as my favourite hobby. I have built a lot of Lego stuff using all the colourful blocks that is available everywhere. </p>
+          </div>
+          <div class="small-6 cell">
+            <img src="<?php echo get_theme_file_uri("/img/placeholder.png")?>" alt="">
+          </div>
         </div>
       </div>
-      </div>
+      
       <br>
       <div class="hero-section">
         <div class="hero-section-text">
