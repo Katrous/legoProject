@@ -9,7 +9,7 @@ while(have_posts()){
   <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
   <br>
   <div>
-  <img class="blog-image" src="<?php echo get_theme_file_uri("/img/placeholder.png")?>">
+  <img class="blog-image" src="<?php echo the_post_thumbnail_url('single-feature'); ?>">
 </div>
 <br>
   <?php the_content(); ?>

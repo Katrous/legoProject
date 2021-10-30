@@ -17,12 +17,16 @@
     $cat_slug = $cat->slug;
     $cat_slug_title =  str_replace('-', ' ', $cat_slug); // Replaces all hyphens with spaces. 
 
+    
+    $ourCurrentPage = get_query_var('paged');
+
     $args = array(
         'post_type' => 'post',
         'post_status' => 'publish',
         'category_name' => $cat_slug,
         //can i pass a variable here that contains the slug of the site?
-        'posts_per_page' => 5,
+        'posts_per_page' => 2,
+        'paged' => $ourCurrentPage
     );
 
     $arr_posts = new WP_Query( $args );
@@ -73,6 +77,9 @@ if ( $arr_posts->have_posts() ) :
             <!-- End Of medium-2 cell -->
         <?php
     endwhile;
+
+    echo paginate_links();
+
     ?>
     
 <?php

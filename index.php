@@ -90,7 +90,7 @@ while(have_posts()){
     <div class="medium-2 cell">
     <div class="media-object">
         <div class="media-object-section">
-            <img class="thumbnail" src="<?php echo get_theme_file_uri("/img/placeholder.png")?>">
+            <img class="thumbnail" src="<?php echo the_post_thumbnail_url('gallery-size'); ?>">
         </div>
         <div class="media-object-section">
             <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
@@ -104,6 +104,13 @@ while(have_posts()){
 }
 
 ?>
+<div class="pagenav-container text-center">
+  <?php 
+    echo paginate_links();
+  ?>
+</div>
+
+
 
 </div>
 <!--pagination-->
