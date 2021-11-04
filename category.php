@@ -25,7 +25,7 @@
         'post_status' => 'publish',
         'category_name' => $cat_slug,
         //can i pass a variable here that contains the slug of the site?
-        'posts_per_page' => 2,
+        'posts_per_page' => 5,
         'paged' => $ourCurrentPage
     );
 
@@ -38,21 +38,6 @@
 </div>
 <!-- close top section of page div -->
 
-
-<!-- Category Boxes -->
-
-    <div class="grid-x align-bottom">
-        <div class="category-container"> 
-            <?php
-            // LOAD Category DYNAMICALLY //
-            $categories = get_categories();
-            foreach($categories as $category) {
-                echo '<a href="' . get_category_link($category->term_id) . '" class="hollow button secondary medium-expanded" id="category_link_box">' . $category->name . '</a>';
-            }  
-            ?>
-        </div> 
-        <!-- close category-container -->
-    </div>
     <!-- close grid-x alig-bottom -->
        
 <?php
@@ -67,7 +52,7 @@ if ( $arr_posts->have_posts() ) :
             <div class="medium-2 cell">
                 <div class="media-object">
                     <div class="media-object-section">
-                        <img class="thumbnail" src="<?php echo get_theme_file_uri("/img/placeholder.png")?>">
+                    <a href="<?php echo get_permalink() ?>"><img class="thumbnail" src="<?php echo the_post_thumbnail_url('gallery-size'); ?>"></a>
                     </div>
                     <div class="media-object-section">
                         <h5><?php the_title(); ?></h5>
@@ -89,26 +74,7 @@ endif;
 ?>
  
     </div>
- 
-
-   
-
-
-
-
     <!--pagination-->
-    <nav aria-label="Pagination">
-    <ul class="pagination text-center">
-        <li class="pagination-previous disabled">Previous</li>
-        <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
-        <li><a href="#" aria-label="Page 2">2</a></li>
-        <li><a href="#" aria-label="Page 3">3</a></li>
-        <li><a href="#" aria-label="Page 4">4</a></li>
-        <li class="ellipsis"></li>
-        <li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
-    </ul>
-    </nav>
-
 </div>
 </div>
 

@@ -90,7 +90,7 @@ while(have_posts()){
 ?>
 
 
-    <h5 class="excerpt-post-title">Make Sure To Check Out the Latest Post!</h5>
+    <h5 class="excerpt-post-title">Make Sure To Check Out Our Latest Posts!</h5>
 
     <?php
   
@@ -115,7 +115,7 @@ while(have_posts()){
 
            <?php 
            // Display the Post Excerpt
-           the_excerpt(); ?>
+           my_excerpt('short'); ?>
          </div> 
        </div>
      </div>
