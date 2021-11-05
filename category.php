@@ -33,7 +33,7 @@
 ?>
 
 
-<div class="grid-x grid-margin-x container_category">         
+<div class="container_category">         
           <h2 class="subheader"><?php echo ucfirst($cat_slug_title); ?></h2>  
 </div>
 <!-- close top section of page div -->
@@ -50,12 +50,12 @@ if ( $arr_posts->have_posts() ) :
         $arr_posts->the_post();
         ?>
             <div class="medium-2 cell">
-                <div class="media-object">
-                    <div class="media-object-section">
-                    <a href="<?php echo get_permalink() ?>"><img class="thumbnail" src="<?php echo the_post_thumbnail_url('gallery-size'); ?>"></a>
+                <div class="media-object index-flex-container">
+                    <div class="media-object-section post-item-containers">
+                    <a href="<?php echo get_permalink() ?>"><img class="thumbnail category-img-container" src="<?php echo the_post_thumbnail_url('gallery-size'); ?>"></a>
                     </div>
-                    <div class="media-object-section">
-                        <h5><?php the_title(); ?></h5>
+                    <div class="media-object-section  post-item-containers">
+                    <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
                         <?php the_excerpt(); ?>           
                 </div>
             </div> 

@@ -3,23 +3,23 @@
 <?php 
 get_header();
 
-while(have_posts()){
-  the_post(); ?>
-  <div class="blog-text">
-  <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-  <br>
-  <div>
-  <img class="blog-image" src="<?php echo the_post_thumbnail_url('single-feature'); ?>">
-</div>
-<br>
-  <?php the_content(); ?>
-  
-  <hr>
-</div>
+  while(have_posts()){
+    the_post(); ?>
+    <div class="blog-text">
+      <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+      <br>
+      <div>
+        <img class="single-blog-image" src="<?php echo the_post_thumbnail_url('single-feature'); ?>">
+      </div>
+      <br>
+      <?php the_content(); ?>
+      <hr>
+    </div>
+  <?php } ?>
+  <!-- End of while -->
 
-  <?php }
+  <h5 class="excerpt-post-title">Make Sure To Check Out Our Latest Posts!</h5>
 
-?>
    <?php
         // Define our WP Query Parameters
         $the_query = new WP_Query( 'posts_per_page=3' ); ?>
@@ -42,7 +42,7 @@ while(have_posts()){
 
                 <?php 
                 // Display the Post Excerpt
-                the_excerpt(); ?>
+                my_excerpt('short'); ?>
               </div> 
             </div>
           </div>

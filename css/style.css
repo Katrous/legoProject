@@ -128,20 +128,20 @@ h3 {
 
 /*Single Blog Post*/
 
-.blog-image {
-	width: 80%;
-	position: center;
-	text-align: center;
-
-}
 
 .blog-text {
 	position: center;
 	text-align: center;
-	padding-left: 20%;
-	padding-right: 20%;
+	width: 60%;
+	margin: 0 auto;
 	padding-top: 3rem;
 	padding-bottom: 3rem;
+}
+
+.single-blog-image {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
 }
 
 .description-label {
@@ -177,6 +177,15 @@ h2 {
 	padding-top: 1rem;
 	padding-bottom: 1.5rem;
 }
+
+.posts-container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+
+}
+
 .excerpt-post-title {
 	text-align: center;
 	padding-bottom: 1rem;
@@ -212,6 +221,10 @@ h2 {
 	background-color: #e6e6e6;
 	color: #000;
 	font-weight: 600;
+}
+
+.category-img-container {
+	height: 100%;
 }
 
 
@@ -360,3 +373,104 @@ h2 {
 	  width: 100%;
 	}
   } */
+
+  /* INDEX.PHP (BLOG POST LIST PAGE) */
+  @media only screen and (max-width: 1440px) {
+	.posts-container {
+		  width: 100%;
+	}
+	.bottom-container {
+		width: 90%;
+	}
+
+	.media-object-section:first-child {
+		padding-right: 0rem;
+	}
+	.single-blog-image {
+		width: 70%;
+	}
+  }
+
+  @media only screen and (max-width: 1024px){
+	.posts-container {
+		width: 100%;
+  }
+	.bottom-container {
+		width: 95%;
+	}
+	.post-item-containers h5 {
+		font-size: 1.5rem;
+	}
+	.post-item-containers p {
+		font-size: .8rem;
+	}
+
+	.index-img-container {
+		display: block;
+		width: 100%;
+	}
+
+	.blog-text{
+		width: 80%;
+		font-size: 1rem;
+	}
+
+	.single-blog-image {
+		width: 60%;
+	}
+
+
+  }
+
+  @media only screen and (max-width: 758px) {
+	  .index-flex-container {
+		  flex-direction: column;
+	  }
+	  .index-img-container {
+		display: block;
+		width: 100%;
+	}
+
+	.post-item-containers {
+		margin: 0 auto;
+		width: 90%;
+		text-align: center;
+	}
+
+	.media-object-section {
+		padding: 0 !important;
+	}
+
+	.blog-text{
+		width: 85%;
+	}
+
+	.single-blog-image {
+		width: 90%;
+	}
+
+  }
+
+  @media only screen and (max-width: 425px) {
+	.post-item-containers {
+		width: 100%;
+		padding: 0;
+	}
+	.post-item-containers p {
+	padding: 0 0.5rem;
+	}
+	.posted-date {
+		padding: 0;
+		margin: 0.5rem 0;
+	}
+
+	
+	.blog-text{
+		width: 90%;
+	}
+
+	.single-blog-image {
+		width: 90%;
+	}
+	
+  }
