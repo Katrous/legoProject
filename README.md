@@ -8,3 +8,7 @@ Get The Navigation Working
 
 
 See Other Repo For Getting Content Working
+
+NOTES FOR MOVING TO SERVER
+https://blog.hubspot.com/website/export-media-library-wordpress
+https://docs.cpanel.net/knowledge-base/web-services/how-to-install-a-node.js-application/
