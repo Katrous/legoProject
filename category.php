@@ -17,32 +17,32 @@
     $cat_slug = $cat->slug;
     $cat_slug_title =  str_replace('-', ' ', $cat_slug); // Replaces all hyphens with spaces. 
 
-    
-    $ourCurrentPage = get_query_var('paged');
-
     $args = array(
         'post_type' => 'post',
         'post_status' => 'publish',
         'category_name' => $cat_slug,
         //can i pass a variable here that contains the slug of the site?
         'posts_per_page' => 5,
-        'paged' => $ourCurrentPage
     );
 
     $arr_posts = new WP_Query( $args );
 ?>
 
-
-<div class="container_category">         
-          <h2 class="subheader"><?php echo ucfirst($cat_slug_title); ?></h2>  
+<div class="category-title">
+<div class="grid-x grid-margin-x container_category">         
+          <h2 class="subheader"><?php echo ucfirst($cat_slug_title); ?></h2> 
+           
+</div>
 </div>
 <!-- close top section of page div -->
 
-    <!-- close grid-x alig-bottom -->
+
+
        
 <?php
 if ( $arr_posts->have_posts() ) :
   ?> 
+  <div class="bottom-container">
     <div class="bottom-container category_top">
 
     <?php
@@ -50,21 +50,18 @@ if ( $arr_posts->have_posts() ) :
         $arr_posts->the_post();
         ?>
             <div class="medium-2 cell">
-                <div class="media-object index-flex-container">
-                    <div class="media-object-section post-item-containers">
-                    <a href="<?php echo get_permalink() ?>"><img class="thumbnail category-img-container" src="<?php echo the_post_thumbnail_url('gallery-size'); ?>"></a>
+                <div class="media-object">
+                    <div class="media-object-section">
+                        <img class="thumbnail" src="<?php echo get_theme_file_uri("/img/placeholder.png")?>">
                     </div>
-                    <div class="media-object-section  post-item-containers">
-                    <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+                    <div class="media-object-section">
+                        <h5><?php the_title(); ?></h5>
                         <?php the_excerpt(); ?>           
                 </div>
             </div> 
             <!-- End Of medium-2 cell -->
         <?php
     endwhile;
-
-    echo paginate_links();
-
     ?>
     
 <?php
@@ -74,7 +71,26 @@ endif;
 ?>
  
     </div>
+    </div>
+
+   
+
+
+
+
     <!--pagination-->
+    <nav aria-label="Pagination">
+    <ul class="pagination text-center">
+        <li class="pagination-previous disabled">Previous</li>
+        <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+        <li><a href="#" aria-label="Page 2">2</a></li>
+        <li><a href="#" aria-label="Page 3">3</a></li>
+        <li><a href="#" aria-label="Page 4">4</a></li>
+        <li class="ellipsis"></li>
+        <li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
+    </ul>
+    </nav>
+
 </div>
 </div>
 

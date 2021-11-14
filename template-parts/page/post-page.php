@@ -19,51 +19,6 @@
       </div>
     </div>
 
-<!--Category Boxes-->
-    <div class="bottom-container">
-    <div class="grid-x align-bottom">
-
-    <div class="small-4 medium-4 cell">
-        <div class="cat-box">
-            <a class="cat-link" href="category"><img src="/wordpress/wp-content/themes/lego/assets/img/placeholder.png" alt=""></a>
-    </div>
-    </div>
-
-<div class="small-4 medium-4 cell">
-    <div class="cat-box">
-        <a class="cat-link" href="category"><img src="/wordpress/wp-content/themes/lego/assets/img/placeholder.png" alt=""></a>
-</div>
-</div>
-
-
-<div class="small-4 medium-4 cell">
-    <div class="cat-box">
-        <a class="cat-link" href="category"><img src="/wordpress/wp-content/themes/lego/assets/img/placeholder.png" alt=""></a>
-</div>
-</div>
-
-
-<div class="small-4 medium-4 cell">
-    <div class="cat-box">
-        <a class="cat-link" href="category"><img src="/wordpress/wp-content/themes/lego/assets/img/placeholder.png" alt=""></a>
-</div>
-</div>
-
-<div class="small-4 medium-4 cell">
-<div class="cat-box">
-    <a class="cat-link" href="category"><img src="/wordpress/wp-content/themes/lego/assets/img/placeholder.png" alt=""></a>
-</div>
-</div>
-
-
-<div class="small-4 medium-4 cell">
-<div class="cat-box">
-    <a class="cat-link" href="category"><img src="/wordpress/wp-content/themes/lego/assets/img/placeholder.png" alt=""></a>
-</div>
-</div>
-</div>
-
-</div>
 
 <!--posts 6?-->
 
