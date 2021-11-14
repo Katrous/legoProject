@@ -26,4 +26,9 @@
     }
     add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
-    
+    function lego_features() {
+        add_theme_support( 'post-thumbnails');
+        add_image_size('gallery-size', 500, 300, true);
+        add_image_size('single-feature', 700, 500, true);
+    }
+    add_action('after_setup_theme', 'lego_features');

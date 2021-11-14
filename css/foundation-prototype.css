@@ -554,7 +554,9 @@ p {
   margin-bottom: 1rem;
   font-size: inherit;
   line-height: 1.6;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility; 
+}
+
 
 em,
 i {
@@ -641,12 +643,8 @@ h6, .h6 {
     font-size: 1rem; } }
 
 a {
-  line-height: inherit;
-  color: #1779ba;
-  text-decoration: none;
+  line-height: inherit;  text-decoration: none;
   cursor: pointer; }
-  a:hover, a:focus {
-    color: #1468a0; }
   a img {
     border: 0; }
 
@@ -3967,7 +3965,6 @@ a.thumbnail {
           -ms-flex-pack: start;
               justify-content: flex-start; }
   .menu .menu-text {
-    padding: 0.7rem 1rem;
     font-weight: bold;
     line-height: 1;
     color: inherit; }
@@ -5049,9 +5046,6 @@ html.is-reveal-open {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
-  .top-bar,
-  .top-bar ul {
-    background-color: #e6e6e6; }
   .top-bar input {
     max-width: 200px;
     margin-right: 1rem; }

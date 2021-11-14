@@ -1,13 +1,11 @@
-<br>
     <footer>
       <div class="top-bar align-center" id="main-menu">
         <ul class="menu vertical medium-horizontal">
-              <li class="menu-text hide-for-small-only"><a href="#home">Back to the Top</a></li>
-              <li class="menu-text hide-for-small-only"><a href="index.html">Home</a></li>
-              <li class="menu-text hide-for-small-only"><a href="single-blog-page.html">Post</a></li>
-              <li class="menu-text hide-for-small-only"><a href="about.html">About</a></li>
-              <li class="menu-text hide-for-small-only"><a href="contact.html">Contact</a></li>
-              <li class="menu-text hide-for-small-only"><a href="#">Twitter</a></li>
+              <li class="menu-text"><a href="#home">Back to the Top</a></li>
+              <li class="menu-text"><a href="<?php echo site_url(); ?>">Home</a></li>
+              <li class="menu-text"><a href=" <?php echo site_url("/blog"); ?>">Post</a></li>
+              <li class="menu-text"><a href="<?php echo site_url("/about"); ?>">About</a></li>
+              <li class="menu-text"><a href="#">Twitter</a></li>
             </ul>
       </div>
     </footer>

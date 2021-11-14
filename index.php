@@ -2,31 +2,12 @@
 <!--Title-->
 <div>
       <div class="row column text-center">
-        <h2 class="subheader">Blog Title</h2>
+        <h2 class="header-h2">Blog Title</h2>
       </div>
     </div>
 
+    
 <!--Category Boxes-->
-
-<!-- Category Boxes
-    <div class="bottom-container">
-    <div class="grid-x align-bottom">
-
-    <div class="category-container"> -->
-
-    <?php
-// LOAD Category DYNAMICALLY //
-
-$categories = get_categories();
-foreach($categories as $category) 
-echo '<a href="' . get_category_link($category->term_id) . '" class="hollow button secondary medium-expanded">' . $category->name . '</a>';
-  
-?>
-
-<!--posts 6?-->
-
-
-
     <div class="bottom-container">
     <div class="grid-x align-bottom">
 
@@ -84,7 +65,22 @@ echo '<a href="' . get_category_link($category->term_id) . '" class="hollow butt
 
 </div>
 
-<!--posts 6?-->
+ <!-- Category Boxes -->
+    <div class="bottom-container">
+    <div class="grid-x align-bottom">
+    <div class="category-container"> 
+
+<?php
+// LOAD Category DYNAMICALLY //
+
+$categories = get_categories();
+foreach($categories as $category) 
+echo '<a href="' . get_category_link($category->term_id) . '" class="hollow button secondary medium-expanded">' . $category->name . '</a>';
+  
+?>
+
+
+<!--posts 6-->
 
 <div class="bottom-container">
 <?php
@@ -94,7 +90,7 @@ while(have_posts()){
     <div class="medium-2 cell">
     <div class="media-object">
         <div class="media-object-section">
-            <img class="thumbnail" src="<?php echo get_theme_file_uri("/img/placeholder.png")?>">
+            <img class="thumbnail" src="<?php echo the_post_thumbnail_url('gallery-size'); ?>">
         </div>
         <div class="media-object-section">
             <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
@@ -108,6 +104,13 @@ while(have_posts()){
 }
 
 ?>
+<div class="pagenav-container text-center">
+  <?php 
+    echo paginate_links();
+  ?>
+</div>
+
+
 
 </div>
 <!--pagination-->
@@ -126,4 +129,7 @@ while(have_posts()){
   </ul>
 </nav>
 
+</div>
+</div>
+</div>
 <?php get_footer(); ?>
