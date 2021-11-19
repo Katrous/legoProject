@@ -1,0 +1,198 @@
+/*
+	Theme Name: Client Project
+	Author: Laura, Niki, Saish And Dylan
+*/
+
+html {
+	scroll-behavior: smooth;
+}
+
+.footer-container {
+	background: #e6e6e6;
+	padding-top: 2%;
+	padding-bottom: 2%; 
+	
+}
+
+.test {
+	max-width: 1000px;
+	list-style: none;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.test2 a {
+	width: 20%;
+    text-align: center;
+    float: left;
+}
+
+.test3 a {
+	text-align: center;
+	margin: 0;
+}
+
+.main-top {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+
+.image-content {
+	width: 60%;
+	padding-top: 0.5rem;
+	padding-right: 3rem;
+}
+
+.image-content img {
+	height: 80%;
+
+}
+
+.top-content-text {
+	float: left;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+.main-middle {
+	max-width: 1250px;
+	margin: 0 auto;
+}
+
+.main-bottom {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.contact-banner {
+	background-image: url('../img/placeholder.png');
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+	background-position: center;
+	background-size: cover;
+	height: 50%;
+	background-repeat: no-repeat;
+}
+
+.contact-banner p {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	color: white;
+}
+
+.hero-section {
+  background: url("../img/placeholder.png") 50% no-repeat;
+  background-size: cover;
+  height: 60vh;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-section .hero-section-text {
+  color: #fefefe;
+  text-shadow: 1px 1px 2px #0a0a0a;
+}
+
+.media-object-section {
+	padding-right: 10%;
+	width: 70%;
+}
+
+.thumbnail {
+	width: 100%;
+}
+
+.image {
+	width: auto;
+	height: 100%;
+	text-align: center;
+	margin: 0 auto;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.grid {
+	width: 99%;
+}
+
+
+/*Single Blog Post*/
+
+.blog-image {
+	height:60%;
+	position: center;
+	text-align: center;
+	padding-left: 23%;
+	padding-right: 20%;
+
+}
+
+.blog-text {
+	position: center;
+	text-align: center;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+.description-label {
+	padding-left: 20%;
+	text-size-adjust: small;
+	padding-bottom: 3rem;
+}
+
+.blog-form-label {
+	padding-left: 20%;
+	padding-right: 40%;
+	padding-bottom: 3rem;
+}
+
+
+/*About Page*/
+h2 {
+	text-align: center;
+	padding-bottom: 1.5rem;
+}
+.about-text {
+	float: right;
+}
+.about-image {
+	float:left;
+}
+
+
+/*bottom posts*/
+.bottom-container {
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 1rem;
+	padding-bottom: 1.5rem;
+}
+.excerpt-post-title {
+	text-align: center;
+	padding-bottom: 1rem;
+	text-size-adjust: small;
+}
+
+.top-bar, .top-bar ul {
+    background-color: black;
+}
